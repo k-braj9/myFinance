@@ -1,0 +1,132 @@
+:root {
+    --paper: #F1EEE2;
+    --paper-raised: #FBF9F2;
+    --ink: #16241C;
+    --ink-muted: #5B6357;
+    --owe: #B94630;
+    --settled: #2F6B4F;
+    --rule: #D3CDB8;
+}
+
+.home {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 40px 80px;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+.hero {
+    background: var(--paper-raised);
+    text-align: center;
+    padding: 64px 40px 48px;
+    position: relative;
+    margin-bottom: 90px;
+    box-shadow: 0 1px 0 var(--rule);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -14px;
+    height: 14px;
+    background:
+        linear-gradient(-45deg, var(--paper) 8px, transparent 0),
+        linear-gradient(45deg, var(--paper) 8px, transparent 0);
+    background-size: 16px 16px;
+    background-position: left bottom;
+}
+
+.hero h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 2.75rem;
+    line-height: 1.15;
+    margin-bottom: 22px;
+    color: var(--ink);
+}
+
+.subtitle {
+    font-size: 1.08rem;
+    color: var(--ink-muted);
+    max-width: 560px;
+    margin: 30px auto 0;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.primary-btn,
+.secondary-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    padding: 13px 26px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.secondary-btn {
+    border: 1px solid var(--ink);
+    background-color: transparent;
+    color: var(--ink);
+}
+
+.secondary-btn:hover {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.feature-card {
+    text-decoration: none;
+    color: var(--ink);
+    background: transparent;
+    padding: 30px 24px;
+    text-align: left;
+    border-top: 1px solid var(--rule);
+    box-shadow: none;
+    transition: .2s;
+}
+
+.feature-card:hover {
+    transform: none;
+    background: var(--paper-raised);
+    box-shadow: none;
+}
+
+.feature-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+    opacity: 0.85;
+}
+
+.feature-card h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    color: var(--ink);
+}
+
+.feature-card p {
+    color: var(--ink-muted);
+    line-height: 1.55;
+    font-size: 0.95rem;
+}

@@ -1,0 +1,39 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 14px;
+    border-radius: 8px;
+
+    background-color: #aa3bff;
+    color: white;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    border: none;
+    cursor: pointer;
+
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.button:hover {
+    background-color: #8f2fe0;
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+/* Chevron icon */
+.arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+/* Optional: rotate arrow when open */
+.button.open .arrow {
+    transform: rotate(180deg);
+}

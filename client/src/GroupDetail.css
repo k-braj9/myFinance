@@ -1,0 +1,479 @@
+.detail {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 40px 100px;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+.group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    border-radius: 14px;
+    padding: 28px 32px;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+}
+
+.header-left .title {
+    margin: 0 0 4px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header-left .description {
+    margin: 0;
+    color: rgba(247, 243, 243, 0.75);
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.expense_button {
+    background: #0f5b2e;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.expense_button:hover {
+    background: #1d4ed8;
+}
+
+.leave {
+    background: #e00808;
+    color: #f8f8f8;
+    border: 1px solid #dc2626;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.leave:hover {
+    background: #fef2f2;
+}
+
+/* ---------- Summary row ---------- */
+
+.summary-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    flex: 1;
+    min-width: 160px;
+    background: var(--paper-raised);
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px 18px;
+}
+
+.summary-card span {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.summary-card h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+/* ---------- Member strip (horizontal, wraps) ---------- */
+
+.member-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.member-card {
+    flex: 1 1 220px;
+    max-width: 350px;
+    background: var(--paper-raised);
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.member-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0;
+    cursor: pointer;
+    color: #1f2430;
+}
+
+.profile-button:hover {
+    text-decoration: underline;
+}
+
+.member-header .remove {
+    background: none;
+    border: none;
+    color: #dc2626;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.member-stats {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.member-stats > div {
+    flex: 1;
+    text-align: center;
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 10px 6px;
+    border: 1px solid #f1f1f1;
+}
+
+.member-stats small {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #9ca3af;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.member-stats h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1f2430;
+}
+
+.member-stats > div:last-child {
+    background: transparent;
+    border: none;
+    padding: 10px 4px 0;
+}
+
+.owed-breakdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+}
+
+.owed-breakdown button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    font-size: 11px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.settled {
+    color: #16a34a;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.owes {
+    color: #dc2626;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.owed {
+    color: #040404;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ---------- Content columns: expenses (left) / recent activity (right) ---------- */
+
+.content-columns {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.left-column {
+    flex: 2;
+    min-width: 0;
+}
+
+.right-column {
+    flex: 1;
+    min-width: 260px;
+}
+
+.content-columns h2 {
+    font-size: 18px;
+    margin: 0 0 14px;
+    color: black;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.expense-card {
+    background: var(--paper-raised);
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px 18px;
+}
+
+.expense-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.expense-top h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    margin-right: 275px;
+}
+
+
+.expense-price {
+    font-weight: 700;
+    color: #1f2430;
+    margin-left: 240px;
+}
+
+.expense-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.expense-actions button {
+    background: #0754ec;
+    border: 1px solid #e5e7eb;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.expense-list {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db transparent;
+}
+
+.expense-actions button:hover {
+    background: #e5e7eb;
+}
+
+.expense-details p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #4b5563;
+}
+
+.expense-split {
+    margin-top: 12px;
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
+}
+
+.expense-split strong {
+    font-size: 12px;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.split-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.split-person {
+    display: flex;
+    gap: 6px;
+    background: #b2a97f;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* ---------- Recent activity timeline ---------- */
+
+.activity-timeline {
+    position: relative;
+    padding-left: 16px;
+    border-left: 2px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activity-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    animation: fadeInActivity 0.3s ease both;
+}
+
+.activity-dot {
+    position: absolute;
+    left: -21px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2563eb;
+}
+
+.activity-name {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.activity-amount {
+    font-size: 13px;
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.activity-date {
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.none {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+@keyframes fadeInActivity {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Invite card (bottom) ---------- */
+
+.invite-card {
+    background: var(--paper-raised);
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px 22px;
+}
+
+.invite-card h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    color: black;
+}
+
+.invite-card p {
+    margin: 0 0 14px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.invite-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.invite-row input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.invite-row .btn {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.invite-row .btn:hover {
+    background: #1d4ed8;
+}
+
+.category_badge {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--surface-1, #f4f4f4);
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin: 4px 0;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 720px) {
+    .content-columns {
+        flex-direction: column;
+    }
+
+    .member-card {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}
+

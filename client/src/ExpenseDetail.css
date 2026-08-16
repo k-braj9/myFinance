@@ -1,0 +1,198 @@
+.expense_form {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.expense_form .form_title {
+    margin: 0 0 24px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f2419;
+}
+
+.expense_form .loading {
+    margin: 0;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.expense_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.expense_form .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.expense_form .field > label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3c4149;
+}
+
+.expense_form input[type="text"],
+.expense_form input[type="number"],
+.expense_form input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid #d8dce1;
+    border-radius: 8px;
+    background: #fafbfc;
+    color: #1a1d21;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.expense_form input[type="date"] {
+    color-scheme: light;
+    cursor: pointer;
+}
+
+.expense_form input[type="text"]::placeholder,
+.expense_form input[type="number"]::placeholder {
+    color: #9aa1ab;
+}
+
+.expense_form input[type="text"]:focus,
+.expense_form input[type="number"]:focus,
+.expense_form input[type="date"]:focus {
+    outline: none;
+    border-color: #4f7cff;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.15);
+}
+
+.expense_form select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: inherit;
+    border: 1px solid #d8dce1;
+    border-radius: 8px;
+    background: #fafbfc;
+    color: #1a1d21;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.expense_form select:focus {
+    outline: none;
+    border-color: #4f7cff;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.15);
+}
+
+.expense_form h3 {
+    margin: 8px 0 0;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6b7280;
+}
+
+.expense_form .checkbox_group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 4px;
+}
+
+.expense_form .checkbox_row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #3c4149;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.expense_form .checkbox_row:hover {
+    background: #f2f4f7;
+}
+
+.expense_form input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #4f7cff;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.expense_form .error {
+    margin: 0;
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #b3261e;
+    background: #fdecea;
+    border: 1px solid #f5c2bf;
+    border-radius: 8px;
+}
+
+.expense_form .form_actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.expense_form button {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.05s ease, border-color 0.15s ease;
+}
+
+.expense_form .btn_primary {
+    color: #ffffff;
+    background: #4f7cff;
+    border: none;
+}
+
+.expense_form .btn_primary:hover {
+    background: #3c66e6;
+}
+
+.expense_form .btn_secondary {
+    color: #3c4149;
+    background: #ffffff;
+    border: 1px solid #d8dce1;
+}
+
+.expense_form .btn_secondary:hover {
+    background: #f2f4f7;
+}
+
+.expense_form button:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 480px) {
+    .expense_form {
+        margin: 0;
+        padding: 24px 20px;
+        border-radius: 0;
+        min-height: 100vh;
+        box-shadow: none;
+    }
+}

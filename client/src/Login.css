@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #0f2419;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.register_form {
+  width: 380px;
+  max-width: calc(100% - 40px);
+  margin: 100px auto 0;
+  padding: 36px 32px;
+
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form_title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f2419;
+  margin: 0 0 28px;
+  letter-spacing: -0.5px;
+}
+
+.field_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.field_group label {
+  font-size: 16px;
+  color: #0f2419;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #dc2626;
+  margin-left: 2px;
+}
+
+.register_form input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #1f2937;
+}
+
+.register_form input:focus {
+  outline: none;
+  border-color: #5b4fe0;
+  box-shadow: 0 0 0 3px rgba(91, 79, 224, 0.15);
+}
+
+.register_form input.has_error {
+  border-color: #dc2626;
+}
+
+.error_text {
+  color: #dc2626;
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+
+.rg_button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background-color: #5b4fe0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.rg_button:hover {
+  background-color: #4c3fd1;
+}
+
+.footer_text {
+  margin: 24px 0 0;
+  font-size: 14px;
+  color: #0f2419;
+  text-align: left;
+}
+
+.login_link {
+  color: #3b3fe0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login_link:hover {
+  text-decoration: underline;
+}

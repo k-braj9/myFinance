@@ -1,0 +1,61 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button wrapper (if needed) */
+.dropdown button {
+    all: unset; /* removes default button styles */
+}
+
+/* The menu container */
+.dropdown-content {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    min-width: 180px;
+
+    background-color: #ffffff;
+    border: 1px solid #e5e4e7;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    animation: dropdownFade 0.15s ease-out;
+}
+
+/* Each item inside dropdown */
+.dropdown-content a,
+.dropdown-content div {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    color: #08060d;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+/* Hover effect */
+.dropdown-content a:hover,
+.dropdown-content div:hover {
+    background-color: rgba(170, 59, 255, 0.1);
+    color: #aa3bff;
+}
+
+/* Smooth appearance */
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

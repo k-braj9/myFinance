@@ -1,0 +1,200 @@
+.payments-page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 40px 100px;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+/* Header */
+.payments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.payments-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 45px;
+    color: var(--ink);
+}
+
+.notice {
+    font-size: 1.08rem;
+    color: var(--ink-muted);
+    max-width: 560px;
+    margin: 30px auto 0;
+    line-height: 1.6;
+}
+
+/* Total owed box */
+.payments-summary {
+    background: white;
+    border: 1px solid #e5e4e7;
+    border-radius: 16px;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.payments-summary span {
+    color: #6b6375;
+    font-size: 14px;
+}
+
+.payments-summary h2 {
+    margin: 8px 0 0;
+    font-size: 30px;
+    color: #aa3bff;
+}
+
+
+/* Loading / empty messages */
+.none {
+    text-align: center;
+    color: #6b6375;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+
+/* Payments list */
+.payments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* Group section */
+.group-payment {
+    background: transparent;
+}
+
+.group-payment h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+
+/* Individual payment card */
+.payment-card {
+    background: var(--paper-raised);
+    border: 1px solid #e5e4e7;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+/* Top section */
+.payment-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-top h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.payment-top p {
+    margin: 8px 0 0;
+    color: #6b6375;
+    font-size: 14px;
+}
+
+
+/* Amount */
+.payment-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #aa3bff;
+}
+
+
+/* Buttons */
+.payment-bottom {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.payment-bottom button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+/* View group button */
+.payment-bottom button:first-child {
+    background: #aa3bff;
+    color: white;
+}
+
+.payment-bottom button:first-child:hover {
+    background: #9229e6;
+}
+
+
+/* Delete button */
+.payment-bottom .delete {
+    background: #ffe5e5;
+    color: #d64545;
+}
+
+.payment-bottom .delete:hover {
+    background: #ffcccc;
+}
+
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    .payments-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .payments-summary {
+        width: 100%;
+    }
+
+    .payment-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .payment-bottom {
+        flex-direction: column;
+    }
+
+    .payment-bottom button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,301 @@
+.dash_body {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 40px 100px;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+
+/* Header */
+
+.dash-header h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 2.75rem;
+    line-height: 1.15;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 45px;
+    color: var(--ink);
+}
+
+.sub {
+    font-size: 1rem;
+    color: var(--slate, #4b5563);
+    font-style: italic;
+    max-width: 560px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+}
+
+
+/* Summary Cards */
+
+.dash-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+
+.dash-card {
+    background: var(--paper-raised);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.dash-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.dash-card h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+
+.dash-card p {
+    font-size: 1.5rem;
+    font-family: 'Fraunces', serif;
+    color: #111827;
+    margin: 0;
+}
+
+
+/* Section Containers */
+
+.dash-activity {
+    background: var(--paper-raised);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    max-height: 450px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db transparent;
+}
+
+.top-groups {
+    background: var(--paper-raised);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+/* Monthly Payments */
+
+.dash-activity h2,
+.top-groups h2,
+.monthly-payments h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.monthly-payments {
+    background: var(--paper-raised);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+}
+
+
+.payment-category-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: var(--paper-raised);
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+
+.payment-category-card span:first-child {
+    font-weight: 600;
+}
+
+
+.payment-category-card span:last-child {
+    color: #090a0b;
+}
+
+
+/* Recent Activity Cards */
+
+.activity-card {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #e5e7eb;
+}
+
+
+.activity-card:last-child {
+    margin-bottom: 0;
+}
+
+
+.activity-card h3 {
+    font-family: 'Fraunces', serif;
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    color: #111827;
+}
+
+
+.activity-card p {
+    margin: 6px 0;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+
+.activity-card strong {
+    color: #1f2937;
+}
+
+
+/* Top Groups */
+
+.top-group-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafb;
+    padding: 15px 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+
+.top-group-card:last-child {
+    margin-bottom: 0;
+}
+
+
+.top-group-card span:first-child {
+    font-weight: 600;
+    color: #111827;
+}
+
+
+.top-group-card span:last-child {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+
+/* Loading/Error */
+
+.dash_body > h2 {
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    margin-top: 50px;
+    color: #374151;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .dash-row {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-header h1 {
+        font-size: 1.6rem;
+    }
+
+}
+
+/* Pie Chart */
+
+.pie-chart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Recharts renders its own SVG text; keep it consistent with the rest of the dashboard */
+.pie-chart-wrapper .recharts-legend-item-text {
+    font-size: 0.9rem;
+    color: #4b5563 !important;
+}
+
+.pie-chart-wrapper .recharts-default-tooltip {
+    border-radius: 12px !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+    font-size: 0.9rem;
+}
+
+/* Empty state, shared across sections */
+
+.empty-state {
+    text-align: center;
+    color: #9ca3af;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+.monthly-payments-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.month-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0l5 6 5-6z' fill='%23666'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding: 8px 32px 8px 12px;
+    font-size: 0.9rem;
+    color: #333;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.month-select:hover {
+    border-color: #b0b0b0;
+}
+
+.month-select:focus {
+    outline: none;
+    border-color: #0088fe;
+    box-shadow: 0 0 0 3px rgba(0, 136, 254, 0.15);
+}
+
+.month-select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

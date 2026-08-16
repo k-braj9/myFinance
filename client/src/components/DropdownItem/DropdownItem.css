@@ -1,0 +1,28 @@
+.item {
+    padding: 0.75rem 1rem;
+    margin: 2px 6px;
+
+    width: auto;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    color: #08060d;
+    background-color: transparent;
+
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+/* hover effect */
+.item:hover {
+    background-color: rgba(170, 59, 255, 0.1);
+    color: #aa3bff;
+}
+
+/* make links fill full width */
+.item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
