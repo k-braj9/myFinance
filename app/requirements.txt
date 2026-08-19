@@ -6,3 +6,4 @@ pydantic
 python-dotenv
 passlib
 python-jose
+python-multipart
