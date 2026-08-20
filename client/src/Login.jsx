@@ -26,6 +26,8 @@ function Login() {
             formData.append("username", username);
             formData.append("password", password);
             formData.append("grant_type", "password");
+            console.log("VITE_API_URL:", import.meta.env.VITE_API_URL);
+            console.log("Axios baseURL:", api.defaults.baseURL);
             const response = await api.post(
                 "/token",
                 formData,
