@@ -1,16 +1,41 @@
-# React + Vite
+# MyFinance
+MyFinance is a full-stack expense management application designed to simplify the spitting and tracking of expenses among groups. Users can create groups, invite members, record shared expenses, customize splitting logic, and settle outstanding depths.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Stack
+This application is built using: 
+Frontend: 
+- React
+- CSS
+- Axios
 
-Currently, two official plugins are available:
+# Backend: 
+- Python
+- FastAPI
+- PostgreSQL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Authentication:
+- JWT
+- API Routes
 
-## React Compiler
+# Features
+Group Management:
+- Create and manage groups
+- invite user to groups through email
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Expense Management:
+- Create expenses within a group
+- Specify expense details like name, amount, participants
+- Assign expenses to specific group members
+- Weighted Expense Splitting
 
-## Expanding the ESLint configuration
+# Payments:
+- Record payments between group members
+- View payment history
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Dashboard:
+- View Monthly expense acivity
+- View top groups and expenses
+
+# Author
+Kaushal Raju
+Computer Science Student
